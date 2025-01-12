@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1D1F26;
+    color: #E0E0E0;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #09092b;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glowing effect */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+/* Problems Section */
+.problems,
+.results {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #282C34;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Titles */
+h2 {
+    font-size: 2.2em;
+    color: #7F7FFF;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #B0B0B0;
+    margin-bottom: 10px;
+}
+
+/* Form Elements */
+textarea,
+select,
+button {
+    background-color: #3A4050;
+    border: 1px solid #4C5671;
+    border-radius: 6px;
+    color: #F0F0F0;
+    font-size: 1.1em;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+textarea:hover,
+select:hover,
+button:hover {
+    border-color: #A9A8E0;
+    background-color: #4B5678;
+}
+
+button {
+    background-color: #7F7FFF;
+    color: #1D1F26;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #6F6FCF;
+    box-shadow: 0 0 15px rgba(127, 127, 255, 0.5);
+}
+
+/* Code Styling for Textarea */
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    resize: vertical;
+    background-color: #2D3540;
+    color: #A9A8E0;
+    border: 1px solid #4C5671;
+    padding: 15px;
+}
+
+/* Table Results */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    color: #F0F0F0;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #4C5671;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table th {
+    background-color: #4C5671;
+}
+
+table tr:hover {
+    background-color: #4B5678;
+}
+
+/* Status Colors */
+.pass {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.fail {
+    color: #F44336;
+    font-weight: bold;
+}
+
+.error {
+    color: #FF9800;
+    font-weight: bold;
+}
+
+/* Link Styling */
+a {
+    color: #7F7FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Code Submission Platform Styling */
+.code-platform {
+    background-color: #3A4E78;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.code-platform h2 {
+    font-size: 2em;
+    color: #7F7FFF;
+    margin-bottom: 20px;
+}
+
+.code-platform textarea {
+    background-color: #2D3540;
+    color: #A9A8E0;
+    border: 1px solid #4C5671;
+    resize: vertical;
+}
+
+.code-platform button {
+    background-color: #7F7FFF;
+    color: #1D1F26;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    padding: 15px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.code-platform button:hover {
+    background-color: #6F6FCF;
+    box-shadow: 0 0 15px rgba(127, 127, 255, 0.5);
+}
+
+
+
