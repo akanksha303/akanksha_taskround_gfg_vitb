@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Submission Platform</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Code Submission Platform</h1>
+    </header>
+
+    <main>
+        <section class="problems">
+            <h2>Problems</h2>
+            <form action="/submit" method="POST">
+                <label for="problem_id">Select a problem:</label>
+                <select id="problem_id" name="problem_id">
+                    {% for problem_id, problem in problems.items() %}
+                        <option value="{{ problem_id }}">{{ problem['title'] }}</option>
+                    {% endfor %}
+                </select>
+
+                <h3>Problem Description:</h3>
+                <p>{{ problems[1].description }}</p> <!-- Dynamic problem description -->
+
+                <h3>Your Code:</h3>
+                <textarea name="code" rows="10" placeholder="Write your code here..."></textarea>
+
+                <button type="submit">Submit Code</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
